@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shashank Singh - AI/ML engineering student building Python, machine learning, deep learning, and generative AI applications.">
+    <meta name="keywords" content="AI/ML, Python, Machine Learning, Generative AI, NLP, Deep Learning, Streamlit">
+    <meta name="Shashank" content="AI Engineer Portfolio">
+    <title>Shashank Singh | AI/ML Engineering Student</title>
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Particle Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">AI.Engineer</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="resume.pdf" class="nav-link cv-nav-pill" target="_blank" rel="noopener noreferrer" title="Open Resume PDF in New Tab">
+                        <i class="fas fa-file-pdf" aria-hidden="true"></i> CV <span class="nav-pdf-badge">PDF</span>
+                    </a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="cv-quick-btn" title="Open CV (PDF)">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>CV <span class="btn-badge">PDF</span></span>
+                </a>
+                <a href="https://github.com/Shashank7275" target="_blank" class="github-nav-btn" aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">AI/ML Engineering Student</span>
+                    <span class="title-separator">|</span>
+                    <span class="title-line">Python Developer</span>
+                    <span class="title-separator">|</span>
+                    <span class="title-line">Generative AI</span>
+                </h1>
+
+                <div class="typing-container">
+                    <span class="typing-text"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="cta-btn primary-btn">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://github.com/Shashank7275" target="_blank" class="cta-btn secondary-btn">
+                        <i class="fab fa-github"></i>
+                        <span>Open GitHub</span>
+                    </a>
+                    <a href="resume.pdf" class="cta-btn secondary-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                        <span>Open CV (PDF)</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hologram-container">
+                    <div class="hologram-ring ring-1"></div>
+                    <div class="hologram-ring ring-2"></div>
+                    <div class="hologram-ring ring-3"></div>
+                    <div class="ai-avatar">
+                        <div class="avatar-core">
+                            <img src="img/shashank.jpeg" alt="Shashank Singh" class="profile-avatar">
+                        </div>
+                        <div class="avatar-particles"></div>
+                    </div>
+                    <div class="scan-line"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                About Me
+                <div class="title-line"></div>
+            </h2>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="glass-card">
+                        <p class="about-description">
+                            I am an <span class="highlight">AI/ML engineering student</span> pursuing a B.Tech in
+                            Computer Science Engineering (Artificial Intelligence &amp; Machine Learning) at Noida
+                            International University. I build practical applications in machine learning, deep
+                            learning, NLP, and generative AI.
+                        </p>
+                        <p class="about-description">
+                            My project work includes resume screening, automated ML workflows, sentiment
+                            classification, and LLM-powered code assistance. I am seeking an AI/ML, Generative AI,
+                            or Python development internship. My current CGPA is 8.96/10.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="skills-container">
+                    <h3 class="skills-title">Technical Expertise</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class="fab fa-python"></i>
+                                <span>Programming</span>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">SQL</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class="fas fa-robot"></i>
+                                <span>Generative AI</span>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Generative AI</span>
+                                <span class="tech-tag">LLMs</span>
+                                <span class="tech-tag">Agno</span>
+                                <span class="tech-tag">Prompt Engineering</span>
+                                <span class="tech-tag">RAG</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class="fas fa-brain"></i>
+                                <span>Machine Learning &amp; AutoML</span>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Scikit-learn</span>
+                                <span class="tech-tag">Regression &amp; Classification</span>
+                                <span class="tech-tag">ML Pipelines</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class="fas fa-comments"></i>
+                                <span>Deep Learning &amp; NLP</span>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">Keras</span>
+                                <span class="tech-tag">RNN, LSTM &amp; GRU</span>
+                                <span class="tech-tag">Text Classification</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class="fas fa-table"></i>
+                                <span>Data Analysis &amp; Feature Engineering</span>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">NumPy</span>
+                                <span class="tech-tag">Matplotlib</span>
+                                <span class="tech-tag">EDA</span>
+                                <span class="tech-tag">Feature Engineering</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class="fas fa-window-maximize"></i>
+                                <span>Development &amp; Deployment</span>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Streamlit</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">Git &amp; GitHub</span>
+                                <span class="tech-tag">Render</span>
+                                <span class="tech-tag">VS Code</span>
+                                <span class="tech-tag">Google Colab</span>
+                                <span class="tech-tag">Kaggle</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Resume &amp; Job Matching</span>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">ATS Scoring</span>
+                                <span class="tech-tag">Resume Parsing</span>
+                                <span class="tech-tag">Keyword Matching</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class="fas fa-code"></i>
+                                <span>AI Code Assistance</span>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Debugging</span>
+                                <span class="tech-tag">Code Analysis</span>
+                                <span class="tech-tag">Suggested Fixes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                Featured Projects
+                <div class="title-line"></div>
+            </h2>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <span role="img" aria-label="Resume document">📄</span>
+                        </div>
+                        <h3 class="project-title">ATS Resume Analyzer – Resume Optimization & Job Matching System</h3>
+                        <p class="project-description">
+                            Built a web application that evaluates an uploaded resume against a target job description.
+                            It surfaces relevant skills, keywords, and experience alignment, adds ATS-style scoring
+                            and missing-keyword analysis, and generates recommendations to improve resume relevance.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">LLMs</span>
+                            <span class="tech-tag">Agno</span>
+                            <span class="tech-tag">Resume Parsing</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Render</span>
+                        </div>
+                        <a href="https://github.com/Shashank7275/ATS_SCORER" target="_blank"
+                            rel="noopener noreferrer" class="project-btn">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                        <a href="https://ats-scorer-1-zx2c.onrender.com/" target="_blank"
+                            rel="noopener noreferrer" class="project-btn">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            <span>Live Demo</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <span role="img" aria-label="Robot">🤖</span>
+                        </div>
+                        <h3 class="project-title">AutoML Agent | Agentic AI & Machine Learning</h3>
+                        <p class="project-description">
+                            Developed an application for structured datasets that supports regression and
+                            classification workflows. It automates analysis and uses Scikit-learn preprocessing and
+                            reusable ML pipelines to organize model building.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">ML Pipelines</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Render</span>
+                        </div>
+                        <a href="https://github.com/Shashank7275/Auto_ML-agent" target="_blank"
+                            rel="noopener noreferrer" class="project-btn">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                        <a href="https://auto-ml-agent.onrender.com" target="_blank"
+                            rel="noopener noreferrer" class="project-btn">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            <span>Live Demo</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <span role="img" aria-label="Speech bubble">💬</span>
+                        </div>
+                        <h3 class="project-title">Deep Learning Sentiment Analysis</h3>
+                        <p class="project-description">
+                            Built a deep-learning text-classification application that predicts emotion labels such as
+                            happy, joy, sad, and angry. Implemented RNN, LSTM, GRU, and bidirectional GRU architectures
+                            for sequence classification.
+
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Keras</span>
+                            <span class="tech-tag">RNN</span>
+                            <span class="tech-tag">LSTM</span>
+                            <span class="tech-tag">GRU</span>
+                            <span class="tech-tag">Bidirectional GRU</span>
+                        </div>
+                        <a href="https://github.com/Shashank7275/Sentiment_Ai" target="_blank"
+                            rel="noopener noreferrer" class="project-btn">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                        <a href="https://sentiment-ai-4-zwsw.onrender.com" target="_blank"
+                            rel="noopener noreferrer" class="project-btn">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            <span>Live Demo</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <span role="img" aria-label="Computer">💻</span>
+                        </div>
+                        <h3 class="project-title">AI Code Assistant – Intelligent Code Debugging & Error Analysis System</h3>
+                        <p class="project-description">
+
+                            Built an assistant that analyzes submitted code, identifies potential errors, and
+                            generates suggested fixes with explanations. An Agno-based agent workflow powers code
+                            analysis and response generation.
+
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Generative AI</span>
+                            <span class="tech-tag">LLMs</span>
+                            <span class="tech-tag">Agno</span>
+                            <span class="tech-tag">Render</span>
+
+                        </div>
+                        <a href="https://github.com/Shashank7275/AI_CODE_ASSISTANT" target="_blank"
+                            rel="noopener noreferrer" class="project-btn">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                        <a href="https://ai-code-assistant-1-ge51.onrender.com" target="_blank"
+                            rel="noopener noreferrer" class="project-btn">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            <span>Live Demo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-buttons" style="justify-content: center; margin-top: 45px;">
+                <a href="https://github.com/Shashank7275?tab=repositories" target="_blank"
+                    rel="noopener noreferrer" class="cta-btn primary-btn">
+                    <span>See All Projects</span>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                Project Experience
+                <div class="title-line"></div>
+            </h2>
+
+            <p class="about-description" style="max-width: 820px; margin: 0 auto 50px; text-align: center;">
+                Selected hands-on experience from building and presenting AI and machine-learning projects.
+            </p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>ATS Resume Analysis</h3>
+                        <p>Compared resumes with job descriptions and surfaced compatibility, missing skills, and
+                            keyword recommendations.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Automated Machine Learning</h3>
+                        <p>Developed an AutoML workflow covering data preparation, EDA, feature engineering, model
+                            comparison, and evaluation.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Deep Learning for Sentiment Analysis</h3>
+                        <p>Built and compared RNN, LSTM, GRU, and bidirectional GRU models for text sentiment
+                            classification.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>AI Code Assistant</h3>
+                        <p>Created a code-debugging application that analyzes errors, suggests fixes, and explains
+                            corrected code and expected output.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-buttons" style="justify-content: center; margin-top: 30px;">
+                <a href="resume.pdf" class="cta-btn secondary-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                    <span>View CV (PDF)</span>
+                </a>
+            </div>
+
+            <h3 class="skills-title" style="text-align: center; margin: 70px 0 35px;">Education</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Noida International University</h3>
+                        <p>B.Tech, Computer Science Engineering (Artificial Intelligence &amp; Machine Learning),
+                            2024–2028. CGPA: 8.96/10.</p>
+                        <p style="margin-top: 12px;">M.J.R.P. Public School, Ghazipur — Class XII (2024), Class X (2022).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume / CV Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span>
+                Resume / CV
+                <div class="title-line"></div>
+            </h2>
+
+            <p class="about-description" style="max-width: 820px; margin: 0 auto 40px; text-align: center;">
+                Review my official curriculum vitae in PDF format showcasing AI/ML projects, Python engineering, IBM ICE certification, and technical background.
+            </p>
+
+            <div class="glass-card resume-container">
+                <div class="resume-header">
+                    <div class="resume-title-wrap">
+                        <div class="resume-icon-badge">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div>
+                            <h3 class="resume-candidate">Shashank Singh</h3>
+                            <p class="resume-subtitle">AI/ML Engineering Student &bull; Python &bull; Generative AI</p>
+                        </div>
+                    </div>
+                    <div class="resume-badges">
+                        <span class="tech-tag"><i class="fas fa-file-pdf"></i> PDF Document</span>
+                        <span class="tech-tag"><i class="fas fa-check-circle"></i> Verified Resume</span>
+                        <span class="tech-tag"><i class="fas fa-graduation-cap"></i> NIU (2024–2028)</span>
+                    </div>
+                </div>
+
+                <div class="resume-actions-bar">
+                    <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="cta-btn primary-btn">
+                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        <span>Open Resume (PDF)</span>
+                    </a>
+                    <a href="resume.pdf" download="Shashank_Singh_Resume.pdf" class="cta-btn secondary-btn">
+                        <i class="fas fa-download" aria-hidden="true"></i>
+                        <span>Download Resume (PDF)</span>
+                    </a>
+                </div>
+
+                <div class="resume-preview-wrapper">
+                    <iframe src="resume.pdf#view=FitH" class="resume-iframe" title="Shashank Singh Resume PDF"></iframe>
+                    <div class="resume-fallback-note">
+                        <p>
+                            <i class="fas fa-info-circle"></i>
+                            Viewing on mobile or prefer a standalone view? 
+                            <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Open PDF in new tab</a> or 
+                            <a href="img/resume-image.jpg" target="_blank" rel="noopener noreferrer">view image version</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05.</span>
+                Get In Touch
+                <div class="title-line"></div>
+            </h2>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Build Something Amazing</h3>
+                    <p>I'm always interested in hearing about new projects and opportunities. Whether you have a
+                        question or just want to say hi, feel free to reach out!</p>
+
+                    <div class="social-links">
+                        <a href="https://github.com/Shashank7275" target="_blank"
+                            rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/shashank-singh-77717a338" target="_blank"
+                            rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:shashank@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                        <div class="input-border"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                        <div class="input-border"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                        <div class="input-border"></div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 AI Engineer Portfolio. Designed & Built with <i class="fas fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
